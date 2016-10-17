@@ -15,6 +15,7 @@
 #import "ChatDemoHelper.h"
 #import "MBProgressHUD.h"
 //#import "RedPacketUserConfig.h"
+//#import "MBProgressHUD+Add.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
 
@@ -49,7 +50,10 @@
 
 - (void)viewDidLoad
 {
+   
     [super viewDidLoad];
+     self.title = @"登录";
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self setupForDismissKeyboard];
     _usernameTextField.delegate = self;
     _passwordTextField.delegate = self;
@@ -62,6 +66,24 @@
 //    [_useIpSwitch setOn:[[EMClient sharedClient].options enableDnsConfig] animated:YES];
     
     self.title = NSLocalizedString(@"AppName", @"EaseMobDemo");
+    
+    [self hyphenateInit];
+}
+
+
+-(void)hyphenateInit{
+    
+//    EMOptions *options = [EMOptions optionsWithAppkey:EaseMobAppKey];
+//    NSString *apnsCertName = nil;
+//#if DEBUG
+//    apnsCertName = @"chatdemoui_dev";
+//#else
+//    apnsCertName = @"chatdemoui";
+//#endif
+//    //        options.apnsCertName = apnsCertName;
+//    [[EMClient sharedClient] initializeSDKWithOptions:options];
+//    //添加回调监听代理:
+////    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -79,6 +101,51 @@
 //注册账号
 //Registered account
 - (IBAction)doRegister:(id)sender {
+    
+    
+    
+    WeakObj(self);
+    [[EMClient sharedClient] registerWithUsername:weakself.usernameTextField.text password:weakself.passwordTextField.text completion:^(NSString *aUsername, EMError *aError) {
+        
+        if (!aError) {
+            NSLog(@"register.success");
+        }else{
+            switch (aError.code) {
+                case EMErrorServerNotReachable:
+                    NSLog(@"error.connectServerFail");
+                    
+                    [MBProgressHUD showSuccess:@"error.connectServerFail" toView:self.view];
+                    break;
+                case EMErrorUserAlreadyExist:
+                    NSLog(@"register.repeat");
+                    [MBProgressHUD showSuccess:@"register.repeat" toView:self.view];
+                    break;
+                case EMErrorNetworkUnavailable:
+                    NSLog(@"error.connectNetworkFail");
+                    [MBProgressHUD showSuccess:@"error.connectNetworkFail" toView:self.view];
+                    break;
+                case EMErrorServerTimeout:
+                    NSLog(@"error.connectServerTimeout");
+                    [MBProgressHUD showSuccess:@"error.connectServerTimeout" toView:self.view];
+                    break;
+                default:
+                    NSLog(@"register.fail");
+                    [MBProgressHUD showSuccess:@"register.fail" toView:self.view];
+                    break;
+            }
+        }
+        
+        BOOL registerSuccess = (!aError) || (aError.code == EMErrorUserAlreadyExist);
+        if (registerSuccess) {
+            
+        }
+    }];
+
+    
+    
+    return ;
+    
+    
     if (![self isEmpty]) {
         //隐藏键盘
         [self.view endEditing:YES];
@@ -97,27 +164,27 @@
         [self showHudInView:self.view hint:NSLocalizedString(@"register.ongoing", @"Is to register...")];
         __weak typeof(self) weakself = self;
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            EMError *error = [[EMClient sharedClient] registerWithUsername:weakself.usernameTextField.text password:weakself.passwordTextField.text];
+            EMError *error = [[EMClient sharedClient] registerWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [weakself hideHud];
                 if (!error) {
-                    TTAlertNoTitle(NSLocalizedString(@"register.success", @"Registered successfully, please log in"));
+                    NSLog(@"register.success");
                 }else{
                     switch (error.code) {
                         case EMErrorServerNotReachable:
-                            TTAlertNoTitle(NSLocalizedString(@"error.connectServerFail", @"Connect to the server failed!"));
+                            NSLog(@"error.connectServerFail");
                             break;
                         case EMErrorUserAlreadyExist:
-                            TTAlertNoTitle(NSLocalizedString(@"register.repeat", @"You registered user already exists!"));
+                            NSLog(@"register.repeat");
                             break;
                         case EMErrorNetworkUnavailable:
-                            TTAlertNoTitle(NSLocalizedString(@"error.connectNetworkFail", @"No network connection!"));
+                            NSLog(@"error.connectNetworkFail");
                             break;
                         case EMErrorServerTimeout:
-                            TTAlertNoTitle(NSLocalizedString(@"error.connectServerTimeout", @"Connect to the server timed out!"));
+                            NSLog(@"error.connectServerTimeout");
                             break;
                         default:
-                            TTAlertNoTitle(NSLocalizedString(@"register.fail", @"Registration failed"));
+                            NSLog(@"register.fail");
                             break;
                     }
                 }
@@ -125,19 +192,46 @@
         });
     }
 }
+- (IBAction)logoutClick:(id)sender {
+    
+    EMError *error = [[EMClient sharedClient] logout:YES];
+        if (!error) {
+            [MBProgressHUD showSuccess:@"退出成功" toView:self.view];
+            NSLog(@"退出成功");
+      }
+}
 
 //点击登陆后的操作
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password
 {
+//    
+//    //异步登陆账号
+//    __weak typeof(self) weakself = self;
+//    [[EMClient sharedClient ] loginWithUsername:self.usernameTextField.text password:self.passwordTextField.text completion:^(NSString *aUsername, EMError *aError) {
+//        if (!aError) {
+//            MLLog(@"登录成功");
+//                [[EMClient sharedClient].options setIsAutoLogin:YES];//自动登录
+//            //                    [self sendMessage];
+//            [MBProgressHUD showSuccess:@"登录成功"];
+//        }else{
+//            MLLog(@"aError.code=%d,aError.description=%@",aError.code,aError.errorDescription);
+//            NSString *msg = [NSString stringWithFormat:@"登录失败---%@",aError.errorDescription];
+//            [MBProgressHUD showSuccess:msg];
+//        }
+//    }];
+//    
+//    
+//    return ;
+    WeakObj(self);
     [self showHudInView:self.view hint:NSLocalizedString(@"login.ongoing", @"Is Login...")];
     //异步登陆账号
-    __weak typeof(self) weakself = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         EMError *error = [[EMClient sharedClient] loginWithUsername:username password:password];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakself hideHud];
+            [self hideHud];
             if (!error) {
                 //设置是否自动登录
+                [MBProgressHUD showSuccess:@"登录成功" toView:self.view];
                 [[EMClient sharedClient].options setIsAutoLogin:YES];
                 
                 //获取数据库中数据
@@ -162,20 +256,35 @@
 //                    case EMErrorNotFound:
 //                        TTAlertNoTitle(error.errorDescription);
 //                        break;
-                    case EMErrorNetworkUnavailable:
-                        TTAlertNoTitle(NSLocalizedString(@"error.connectNetworkFail", @"No network connection!"));
+                    case EMErrorNetworkUnavailable:{
+                        NSLog(@"error.connectNetworkFail");
+                        [MBProgressHUD showSuccess:@"error.connectNetworkFail" toView:self.view];
+                    }
+                        
                         break;
-                    case EMErrorServerNotReachable:
-                        TTAlertNoTitle(NSLocalizedString(@"error.connectServerFail", @"Connect to the server failed!"));
+                    case EMErrorServerNotReachable:{
+                        NSLog(@"error.connectServerFail");
+                        [MBProgressHUD showSuccess:@"error.connectServerFail" toView:self.view];
+                    }
+                        
                         break;
-                    case EMErrorUserAuthenticationFailed:
-                        TTAlertNoTitle(error.errorDescription);
+                    case EMErrorUserAuthenticationFailed:{
+                        NSString *msg = error.errorDescription;
+                        NSLog(@"msg=%@",msg);
+                    }
+                        
                         break;
-                    case EMErrorServerTimeout:
-                        TTAlertNoTitle(NSLocalizedString(@"error.connectServerTimeout", @"Connect to the server timed out!"));
+                    case EMErrorServerTimeout:{
+                        [MBProgressHUD showSuccess:@"connectServerTimeout" toView:self.view];
+                        NSLog(@"error.connectServerTimeout");
+                    }
+                        
                         break;
-                    default:
-                        TTAlertNoTitle(NSLocalizedString(@"login.fail", @"Login failure"));
+                    default:{
+                        [MBProgressHUD showSuccess:@"login.fail" toView:self.view];
+                        NSLog(@"login.fail");
+                    }
+                        
                         break;
                 }
             }

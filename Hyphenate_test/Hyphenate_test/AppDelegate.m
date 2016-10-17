@@ -7,16 +7,61 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
+#import "ConversationListController.h"
+#import "LoginViewController.h"
+#import "AppDelegate+EaseMob.h"
 
 @interface AppDelegate ()
 
 @end
 
+#define EaseMobAppKey @"1101161014115255#shuaihuo"
+#define APNSCERTNAME_DEV @"Dev_saleTool_push_123"//环信推送开发证书
+#define APNSCERTNAME_DIS @"dis_saleTool_push_123"//环信推送 生产证书
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+
+
+
+    FirstViewController *first = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    first.title = @"首页";
+    ConversationListController *list = [[ConversationListController alloc] init];
+    list.title = @"聊天";
+    LoginViewController *login = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil ];
+    login.title = @"登录";
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:first];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:list];
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:login];
+
+    
+    
+    UITabBarController *tabb = [[UITabBarController alloc] init];
+    NSArray *arr = [[NSArray alloc] initWithObjects:nav1,nav2,nav3, nil];
+    tabb.viewControllers     = arr;
+    self.window.rootViewController = tabb;
+    [self.window makeKeyAndVisible];
+
+    NSString *apnsCertName = nil;
+#if DEBUG
+    apnsCertName = APNSCERTNAME_DEV;
+#else
+    apnsCertName = APNSCERTNAME_DIS;
+#endif
+    NSString *appkey = EaseMobAppKey;
+    [self easemobApplication:application
+didFinishLaunchingWithOptions:launchOptions
+                      appkey:appkey
+                apnsCertName:apnsCertName
+                 otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
+    
+
+    
     return YES;
 }
 

@@ -119,7 +119,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
         [navigationController.navigationBar.layer setMasksToBounds:YES];
     }
     
-    self.window.rootViewController = navigationController;
+//    self.window.rootViewController = navigationController;
 }
 
 #pragma mark - EMPushManagerDelegateDevice

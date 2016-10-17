@@ -54,7 +54,10 @@
 @implementation ConversationListController
 
 - (void)viewDidLoad {
+    
+    self.navigationController.navigationBarHidden = NO;
     [super viewDidLoad];
+    self.title = @"聊天";
     
     // Do any additional setup after loading the view.
     self.showRefreshHeader = YES;

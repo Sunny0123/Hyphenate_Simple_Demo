@@ -1,1 +1,29 @@
-1
+# for Mac OS X System Files
+.DS_Store
+Thumbs.db
+
+
+
+# for Xcode
+.*.swp
+.clang_complete
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+
+#.gitignore  
+# ignore cocoaPods  
+/Pods 
+/CommunityBuyer/Pods 
+
+
+
+# 忽略Xcode本地用户配置信息
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+xcshareddata/
+.metadata/
+# 忽略`Pods/`和`Podfile.lock`
+Pods/
+

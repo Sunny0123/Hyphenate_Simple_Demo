@@ -11,7 +11,6 @@
 		4F668118B2AEE77EDA01E2ED /* libPods-Hyphenate_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2881D6A156A7CC3CDBF802 /* libPods-Hyphenate_test.a */; };
 		9D6711401DB4ADFD00450AFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D67113F1DB4ADFD00450AFB /* main.m */; };
 		9D6711431DB4ADFD00450AFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6711421DB4ADFD00450AFB /* AppDelegate.m */; };
-		9D6711461DB4ADFD00450AFB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6711451DB4ADFD00450AFB /* FirstViewController.m */; };
 		9D6711491DB4ADFD00450AFB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6711481DB4ADFD00450AFB /* SecondViewController.m */; };
 		9D67114C1DB4ADFD00450AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67114A1DB4ADFD00450AFB /* Main.storyboard */; };
 		9D67114E1DB4ADFD00450AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D67114D1DB4ADFD00450AFB /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 		9DD6DDEB1DB4B71200228284 /* AppDelegate+EaseMobDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD7C1DB4B71200228284 /* AppDelegate+EaseMobDebug.m */; };
 		9DD6DDEC1DB4B71200228284 /* AppDelegate+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD7E1DB4B71200228284 /* AppDelegate+Parse.m */; };
 		9DD6DDED1DB4B71200228284 /* AppDelegate+UMeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD801DB4B71200228284 /* AppDelegate+UMeng.m */; };
-		9DD6DDEF1DB4B71200228284 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD6DD831DB4B71200228284 /* LoginViewController.xib */; };
 		9DD6DDF01DB4B71200228284 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD871DB4B71200228284 /* CallViewController.m */; };
 		9DD6DDF11DB4B71200228284 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD8B1DB4B71200228284 /* ConversationListController.m */; };
 		9DD6DDF21DB4B71200228284 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DD8E1DB4B71200228284 /* ChatViewController.m */; };
@@ -60,8 +58,6 @@
 		9DD6DE091DB4B71200228284 /* RealtimeSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDC01DB4B71200228284 /* RealtimeSearchUtil.m */; };
 		9DD6DE0A1DB4B71200228284 /* InvitationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDC31DB4B71200228284 /* InvitationManager.m */; };
 		9DD6DE0B1DB4B71200228284 /* UserProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDC51DB4B71200228284 /* UserProfileManager.m */; };
-		9DD6DE0C1DB4B71200228284 /* LoginViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DD6DDC61DB4B71200228284 /* LoginViewController.strings */; };
-		9DD6DE0D1DB4B71200228284 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDC91DB4B71200228284 /* LoginViewController.m */; };
 		9DD6DE0E1DB4B71200228284 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDCB1DB4B71200228284 /* MainViewController.m */; };
 		9DD6DE0F1DB4B71200228284 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDCE1DB4B71200228284 /* UserProfileViewController.m */; };
 		9DD6DE101DB4B71200228284 /* EMRobotChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DDD11DB4B71200228284 /* EMRobotChatTextBubbleView.m */; };
@@ -206,6 +202,10 @@
 		9DD6DF4D1DB4B7AD00228284 /* UIImageView+HeadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DF481DB4B7AD00228284 /* UIImageView+HeadImage.m */; };
 		9DD6DF4E1DB4B7AD00228284 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DF4A1DB4B7AD00228284 /* UIResponder+Router.m */; };
 		9DD6DF4F1DB4B7AD00228284 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DF4C1DB4B7AD00228284 /* UIViewController+HUD.m */; };
+		9DD6DF531DB4BC7000228284 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DF511DB4BC7000228284 /* LoginViewController.m */; };
+		9DD6DF561DB4C34500228284 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD6DF551DB4C34500228284 /* LoginViewController.xib */; };
+		9DD6DF5A1DB4C3EA00228284 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6DF581DB4C3EA00228284 /* FirstViewController.m */; };
+		9DD6DF5B1DB4C3EA00228284 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD6DF591DB4C3EA00228284 /* FirstViewController.xib */; };
 		9DF83C4D1DB4AFD60075EE22 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF83C4C1DB4AFD60075EE22 /* libiconv.tbd */; };
 		9DF8414A1DB4B2360075EE22 /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF840301DB4B2360075EE22 /* EMAudioPlayerUtil.m */; };
 		9DF8414B1DB4B2360075EE22 /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF840321DB4B2360075EE22 /* EMAudioRecorderUtil.m */; };
@@ -329,8 +329,6 @@
 		9D67113F1DB4ADFD00450AFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D6711411DB4ADFD00450AFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D6711421DB4ADFD00450AFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D6711441DB4ADFD00450AFB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		9D6711451DB4ADFD00450AFB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9D6711471DB4ADFD00450AFB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		9D6711481DB4ADFD00450AFB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		9D67114B1DB4ADFD00450AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -360,7 +358,6 @@
 		9DD6DD7E1DB4B71200228284 /* AppDelegate+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Parse.m"; sourceTree = "<group>"; };
 		9DD6DD7F1DB4B71200228284 /* AppDelegate+UMeng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UMeng.h"; sourceTree = "<group>"; };
 		9DD6DD801DB4B71200228284 /* AppDelegate+UMeng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UMeng.m"; sourceTree = "<group>"; };
-		9DD6DD841DB4B71200228284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 		9DD6DD861DB4B71200228284 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
 		9DD6DD871DB4B71200228284 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 		9DD6DD8A1DB4B71200228284 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
@@ -417,9 +414,6 @@
 		9DD6DDC31DB4B71200228284 /* InvitationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationManager.m; sourceTree = "<group>"; };
 		9DD6DDC41DB4B71200228284 /* UserProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileManager.h; sourceTree = "<group>"; };
 		9DD6DDC51DB4B71200228284 /* UserProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileManager.m; sourceTree = "<group>"; };
-		9DD6DDC71DB4B71200228284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginViewController.strings; sourceTree = "<group>"; };
-		9DD6DDC81DB4B71200228284 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		9DD6DDC91DB4B71200228284 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		9DD6DDCA1DB4B71200228284 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9DD6DDCB1DB4B71200228284 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9DD6DDCD1DB4B71200228284 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
@@ -448,7 +442,6 @@
 		9DD6DDE61DB4B71200228284 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		9DD6DDE71DB4B71200228284 /* UserProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileEditViewController.h; sourceTree = "<group>"; };
 		9DD6DDE81DB4B71200228284 /* UserProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileEditViewController.m; sourceTree = "<group>"; };
-		9DD6DDE91DB4B71200228284 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoginViewController.strings"; sourceTree = "<group>"; };
 		9DD6DE1D1DB4B74F00228284 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		9DD6DE1E1DB4B74F00228284 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		9DD6DE1F1DB4B74F00228284 /* EMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSearchBar.h; sourceTree = "<group>"; };
@@ -596,6 +589,13 @@
 		9DD6DF4A1DB4B7AD00228284 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		9DD6DF4B1DB4B7AD00228284 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		9DD6DF4C1DB4B7AD00228284 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		9DD6DF501DB4BC7000228284 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9DD6DF511DB4BC7000228284 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9DD6DF551DB4C34500228284 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9DD6DF571DB4C3EA00228284 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9DD6DF581DB4C3EA00228284 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9DD6DF591DB4C3EA00228284 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		9DD6DF5C1DB4CB7A00228284 /* Hyphenate_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyphenate_test.entitlements; sourceTree = "<group>"; };
 		9DF83C4C1DB4AFD60075EE22 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		9DF840261DB4B2360075EE22 /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		9DF8402B1DB4B2360075EE22 /* EMCDDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerDelegate.h; sourceTree = "<group>"; };
@@ -915,6 +915,7 @@
 		9D67113D1DB4ADFD00450AFB /* Hyphenate_test */ = {
 			isa = PBXGroup;
 			children = (
+				9DD6DF5C1DB4CB7A00228284 /* Hyphenate_test.entitlements */,
 				9DD6DF461DB4B7AD00228284 /* Category */,
 				9DD6DF271DB4B77200228284 /* 3rdparty */,
 				9DD6DE1C1DB4B74F00228284 /* Custom */,
@@ -922,8 +923,6 @@
 				9DD6DD781DB4B71200228284 /* Class */,
 				9D6711411DB4ADFD00450AFB /* AppDelegate.h */,
 				9D6711421DB4ADFD00450AFB /* AppDelegate.m */,
-				9D6711441DB4ADFD00450AFB /* FirstViewController.h */,
-				9D6711451DB4ADFD00450AFB /* FirstViewController.m */,
 				9D6711471DB4ADFD00450AFB /* SecondViewController.h */,
 				9D6711481DB4ADFD00450AFB /* SecondViewController.m */,
 				9D67114A1DB4ADFD00450AFB /* Main.storyboard */,
@@ -931,6 +930,9 @@
 				9D67114F1DB4ADFD00450AFB /* LaunchScreen.storyboard */,
 				9D6711521DB4ADFD00450AFB /* Info.plist */,
 				9D67113E1DB4ADFD00450AFB /* Supporting Files */,
+				9DD6DF571DB4C3EA00228284 /* FirstViewController.h */,
+				9DD6DF581DB4C3EA00228284 /* FirstViewController.m */,
+				9DD6DF591DB4C3EA00228284 /* FirstViewController.xib */,
 			);
 			path = Hyphenate_test;
 			sourceTree = "<group>";
@@ -965,6 +967,9 @@
 		9DD6DD781DB4B71200228284 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9DD6DF501DB4BC7000228284 /* LoginViewController.h */,
+				9DD6DF511DB4BC7000228284 /* LoginViewController.m */,
+				9DD6DF551DB4C34500228284 /* LoginViewController.xib */,
 				9DD6DD791DB4B71200228284 /* AppDelegate+EaseMob.h */,
 				9DD6DD7A1DB4B71200228284 /* AppDelegate+EaseMob.m */,
 				9DD6DD7B1DB4B71200228284 /* AppDelegate+EaseMobDebug.h */,
@@ -973,7 +978,6 @@
 				9DD6DD7E1DB4B71200228284 /* AppDelegate+Parse.m */,
 				9DD6DD7F1DB4B71200228284 /* AppDelegate+UMeng.h */,
 				9DD6DD801DB4B71200228284 /* AppDelegate+UMeng.m */,
-				9DD6DD831DB4B71200228284 /* LoginViewController.xib */,
 				9DD6DD851DB4B71200228284 /* Call */,
 				9DD6DD881DB4B71200228284 /* Chat */,
 				9DD6DD8F1DB4B71200228284 /* ChatDemoHelper.h */,
@@ -982,9 +986,6 @@
 				9DD6DDAA1DB4B71200228284 /* Chatroom */,
 				9DD6DDB11DB4B71200228284 /* Contacts */,
 				9DD6DDC11DB4B71200228284 /* Core Data */,
-				9DD6DDC61DB4B71200228284 /* LoginViewController.strings */,
-				9DD6DDC81DB4B71200228284 /* LoginViewController.h */,
-				9DD6DDC91DB4B71200228284 /* LoginViewController.m */,
 				9DD6DDCA1DB4B71200228284 /* MainViewController.h */,
 				9DD6DDCB1DB4B71200228284 /* MainViewController.m */,
 				9DD6DDCC1DB4B71200228284 /* Profile */,
@@ -2076,13 +2077,21 @@
 					9D67113A1DB4ADFD00450AFB = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = D2YB7AB988;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					9D6711561DB4ADFD00450AFB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D2YB7AB988;
 						TestTargetID = 9D67113A1DB4ADFD00450AFB;
 					};
 					9D6711611DB4ADFD00450AFB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D2YB7AB988;
 						TestTargetID = 9D67113A1DB4ADFD00450AFB;
 					};
 				};
@@ -2114,6 +2123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DD6DF211DB4B74F00228284 /* tabbar_settingHL.png in Resources */,
+				9DD6DF5B1DB4C3EA00228284 /* FirstViewController.xib in Resources */,
 				9DD6DF1E1DB4B74F00228284 /* tabbar_contactsHL@2x.png in Resources */,
 				9DD6DEBC1DB4B74F00228284 /* 80.png in Resources */,
 				9DD6DED61DB4B74F00228284 /* chat_receiver_audio_playing001@2x.png in Resources */,
@@ -2166,7 +2176,6 @@
 				9DD6DF231DB4B74F00228284 /* tabbarBackground.png in Resources */,
 				9DD6DEE41DB4B74F00228284 /* icon_002_cover.png in Resources */,
 				9DD6DF401DB4B77200228284 /* sr_refresh.png in Resources */,
-				9DD6DDEF1DB4B71200228284 /* LoginViewController.xib in Resources */,
 				9DD6DF0A1DB4B74F00228284 /* group_detail@2x.png in Resources */,
 				9DD6DECF1DB4B74F00228284 /* chat_location_preview.png in Resources */,
 				9DD6DEC51DB4B74F00228284 /* call_silence_h.png in Resources */,
@@ -2185,7 +2194,6 @@
 				9DD6DF141DB4B74F00228284 /* groupPublicHeader@2x.png in Resources */,
 				9DD6DF131DB4B74F00228284 /* groupPrivateHeader@2x.png in Resources */,
 				9DD6DF0C1DB4B74F00228284 /* titleBar@2x.png in Resources */,
-				9DD6DE0C1DB4B71200228284 /* LoginViewController.strings in Resources */,
 				9DD6DF011DB4B74F00228284 /* icon_040.gif in Resources */,
 				9DD6DF411DB4B77200228284 /* sr_refresh@2X.png in Resources */,
 				9DD6DF1B1DB4B74F00228284 /* tabbar_contacts.png in Resources */,
@@ -2195,6 +2203,7 @@
 				9DD6DF061DB4B74F00228284 /* password@2x.png in Resources */,
 				9DD6DEC01DB4B74F00228284 /* call_out@2x.png in Resources */,
 				9DD6DECD1DB4B74F00228284 /* chat_location_detail_disclosureHL.png in Resources */,
+				9DD6DF561DB4C34500228284 /* LoginViewController.xib in Resources */,
 				9DD6DF071DB4B74F00228284 /* add@2x.png in Resources */,
 				9DD6DEE31DB4B74F00228284 /* icon_002.gif in Resources */,
 				9DD6DECA1DB4B74F00228284 /* chat_location_annotation_someone@2x.png in Resources */,
@@ -2404,6 +2413,7 @@
 				9DD6DDEB1DB4B71200228284 /* AppDelegate+EaseMobDebug.m in Sources */,
 				9DD6DDF51DB4B71200228284 /* ContactSelectionViewController.m in Sources */,
 				9DD6DE091DB4B71200228284 /* RealtimeSearchUtil.m in Sources */,
+				9DD6DF5A1DB4C3EA00228284 /* FirstViewController.m in Sources */,
 				9DD6DDF41DB4B71200228284 /* ChatGroupDetailViewController.m in Sources */,
 				9DF8419B1DB4B2370075EE22 /* EaseChineseToPinyin.m in Sources */,
 				9DD6DE161DB4B71200228284 /* BlackListViewController.m in Sources */,
@@ -2453,6 +2463,7 @@
 				9DD6DEB01DB4B74F00228284 /* EMTextView.m in Sources */,
 				9DD6DDF71DB4B71200228284 /* CreateGroupViewController.m in Sources */,
 				9DD6DEB21DB4B74F00228284 /* BaseViewController.m in Sources */,
+				9DD6DF531DB4BC7000228284 /* LoginViewController.m in Sources */,
 				9DF841941DB4B2370075EE22 /* EaseMessageModel.m in Sources */,
 				9DD6DE181DB4B71200228284 /* EditNicknameViewController.m in Sources */,
 				9DF841921DB4B2370075EE22 /* EaseSDKHelper.m in Sources */,
@@ -2494,7 +2505,6 @@
 				9DD6DE111DB4B71200228284 /* EMRotbotChatViewCell.m in Sources */,
 				9DD6DEB11DB4B74F00228284 /* EMRemarkImageView.m in Sources */,
 				9DD6DEAE1DB4B74F00228284 /* BaseTableViewCell.m in Sources */,
-				9D6711461DB4ADFD00450AFB /* FirstViewController.m in Sources */,
 				9DD6DF421DB4B77200228284 /* SRRefreshView.m in Sources */,
 				9DF841831DB4B2370075EE22 /* UIView+EMWebCacheOperation.m in Sources */,
 				9DD6DE151DB4B71200228284 /* BackupViewController.m in Sources */,
@@ -2526,7 +2536,6 @@
 				9DF8419E1DB4B2370075EE22 /* EaseEmoji.m in Sources */,
 				9DF841931DB4B2370075EE22 /* EaseConversationModel.m in Sources */,
 				9DF841B61DB4B2370075EE22 /* EaseChatToolbar.m in Sources */,
-				9DD6DE0D1DB4B71200228284 /* LoginViewController.m in Sources */,
 				9DF841B51DB4B2370075EE22 /* EaseBubbleView.m in Sources */,
 				9DD6DF4E1DB4B7AD00228284 /* UIResponder+Router.m in Sources */,
 				9DD6DDF11DB4B71200228284 /* ConversationListController.m in Sources */,
@@ -2584,23 +2593,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		9DD6DD831DB4B71200228284 /* LoginViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DD6DD841DB4B71200228284 /* Base */,
-			);
-			name = LoginViewController.xib;
-			sourceTree = "<group>";
-		};
-		9DD6DDC61DB4B71200228284 /* LoginViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DD6DDC71DB4B71200228284 /* en */,
-				9DD6DDE91DB4B71200228284 /* zh-Hans */,
-			);
-			name = LoginViewController.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -2622,9 +2614,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D2YB7AB988;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2644,6 +2638,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b1541b10-34da-443e-8d87-a6adf89caf30";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2666,9 +2661,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D2YB7AB988;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2681,6 +2678,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b1541b10-34da-443e-8d87-a6adf89caf30";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2691,6 +2689,9 @@
 			baseConfigurationReference = 8EC4EDA69F725ADF5E824446 /* Pods-Hyphenate_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hyphenate_test/Hyphenate_test.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
 				DEVELOPMENT_TEAM = D2YB7AB988;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2710,6 +2711,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaio2o.saletool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b1541b10-34da-443e-8d87-a6adf89caf30";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Sale Tool";
 			};
 			name = Debug;
 		};
@@ -2718,6 +2721,9 @@
 			baseConfigurationReference = 9B605BEBF15071924E5470C6 /* Pods-Hyphenate_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hyphenate_test/Hyphenate_test.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuta Chen (38B3TA65YZ)";
 				DEVELOPMENT_TEAM = D2YB7AB988;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2737,6 +2743,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaio2o.saletool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b1541b10-34da-443e-8d87-a6adf89caf30";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Sale Tool";
 			};
 			name = Release;
 		};

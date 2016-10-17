@@ -22,6 +22,9 @@
 
 #import "EMSDKFull.h"
 #import "EaseUI.h"
+#import "MBProgressHUD+Add.h"
+#define WeakObj(o) __weak typeof(o) weak##o = o;
+
 
 #define DEMO_CALL 1
 
