@@ -12,14 +12,14 @@
 
 #import "ChatViewController.h"
 
-#import "ChatGroupDetailViewController.h"
-#import "ChatroomDetailViewController.h"
+//#import "ChatGroupDetailViewController.h"
+//#import "ChatroomDetailViewController.h"
 #import "UserProfileViewController.h"
 #import "UserProfileManager.h"
-#import "ContactListSelectViewController.h"
+//#import "ContactListSelectViewController.h"
 #import "ChatDemoHelper.h"
 #import "EMChooseViewController.h"
-#import "ContactSelectionViewController.h"
+//#import "ContactSelectionViewController.h"
 
 @interface ChatViewController ()<UIAlertViewDelegate,EMClientDelegate, EMChooseViewDelegate>
 {
@@ -215,10 +215,10 @@
                                 }
                                 return;
                             }
-                            ContactSelectionViewController *selectController = [[ContactSelectionViewController alloc] initWithContacts:members];
-                            selectController.mulChoice = NO;
-                            selectController.delegate = self;
-                            [self.navigationController pushViewController:selectController animated:YES];
+//                            ContactSelectionViewController *selectController = [[ContactSelectionViewController alloc] initWithContacts:members];
+//                            selectController.mulChoice = NO;
+//                            selectController.delegate = self;
+//                            [self.navigationController pushViewController:selectController animated:YES];
                         }
                     }
                 });
@@ -236,10 +236,10 @@
                 }
                 return;
             }
-            ContactSelectionViewController *selectController = [[ContactSelectionViewController alloc] initWithContacts:members];
-            selectController.mulChoice = NO;
-            selectController.delegate = self;
-            [self.navigationController pushViewController:selectController animated:YES];
+//            ContactSelectionViewController *selectController = [[ContactSelectionViewController alloc] initWithContacts:members];
+//            selectController.mulChoice = NO;
+//            selectController.delegate = self;
+//            [self.navigationController pushViewController:selectController animated:YES];
         }
     }
 }
@@ -353,15 +353,15 @@
 - (void)showGroupDetailAction
 {
     [self.view endEditing:YES];
-    if (self.conversation.type == EMConversationTypeGroupChat) {
-        ChatGroupDetailViewController *detailController = [[ChatGroupDetailViewController alloc] initWithGroupId:self.conversation.conversationId];
-        [self.navigationController pushViewController:detailController animated:YES];
-    }
-    else if (self.conversation.type == EMConversationTypeChatRoom)
-    {
-        ChatroomDetailViewController *detailController = [[ChatroomDetailViewController alloc] initWithChatroomId:self.conversation.conversationId];
-        [self.navigationController pushViewController:detailController animated:YES];
-    }
+//    if (self.conversation.type == EMConversationTypeGroupChat) {
+//        ChatGroupDetailViewController *detailController = [[ChatGroupDetailViewController alloc] initWithGroupId:self.conversation.conversationId];
+//        [self.navigationController pushViewController:detailController animated:YES];
+//    }
+//    else if (self.conversation.type == EMConversationTypeChatRoom)
+//    {
+//        ChatroomDetailViewController *detailController = [[ChatroomDetailViewController alloc] initWithChatroomId:self.conversation.conversationId];
+//        [self.navigationController pushViewController:detailController animated:YES];
+//    }
 }
 
 - (void)deleteAllMessages:(id)sender
@@ -394,10 +394,10 @@
 {
     if (self.menuIndexPath && self.menuIndexPath.row > 0) {
         id<IMessageModel> model = [self.dataArray objectAtIndex:self.menuIndexPath.row];
-        ContactListSelectViewController *listViewController = [[ContactListSelectViewController alloc] initWithNibName:nil bundle:nil];
-        listViewController.messageModel = model;
-        [listViewController tableViewDidTriggerHeaderRefresh];
-        [self.navigationController pushViewController:listViewController animated:YES];
+//        ContactListSelectViewController *listViewController = [[ContactListSelectViewController alloc] initWithNibName:nil bundle:nil];
+//        listViewController.messageModel = model;
+//        [listViewController tableViewDidTriggerHeaderRefresh];
+//        [self.navigationController pushViewController:listViewController animated:YES];
     }
     self.menuIndexPath = nil;
 }

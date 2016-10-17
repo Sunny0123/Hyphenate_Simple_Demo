@@ -26,6 +26,6 @@
 #define WeakObj(o) __weak typeof(o) weak##o = o;
 
 
-#define DEMO_CALL 1
+#define DEMO_CALL 0
 
 #endif

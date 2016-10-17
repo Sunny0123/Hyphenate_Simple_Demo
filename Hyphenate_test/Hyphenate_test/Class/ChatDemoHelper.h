@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 
 #import "ConversationListController.h"
-#import "ContactListViewController.h"
-#import "MainViewController.h"
+//#import "ContactListViewController.h"
+//#import "MainViewController.h"
 #import "ChatViewController.h"
 
 #define kHaveUnreadAtMessage    @"kHaveAtMessage"
@@ -33,11 +33,11 @@
 
 #endif
 
-@property (nonatomic, weak) ContactListViewController *contactViewVC;
+//@property (nonatomic, weak) ContactListViewController *contactViewVC;
 
 @property (nonatomic, weak) ConversationListController *conversationListVC;
 
-@property (nonatomic, weak) MainViewController *mainVC;
+//@property (nonatomic, weak) MainViewController *mainVC;
 
 @property (nonatomic, weak) ChatViewController *chatVC;
 

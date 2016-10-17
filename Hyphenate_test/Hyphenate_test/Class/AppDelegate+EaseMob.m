@@ -104,7 +104,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 //            [self.mainController.navigationController popToRootViewControllerAnimated:NO];
 //        }
 //        self.mainController = nil;
-        [ChatDemoHelper shareHelper].mainVC = nil;
+//        [ChatDemoHelper shareHelper].mainVC = nil;
         
         LoginViewController *loginController = [[LoginViewController alloc] init];
         navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];

@@ -18,7 +18,7 @@
 #import "RobotManager.h"
 #import "RobotChatViewController.h"
 #import "UserProfileManager.h"
-#import "RealtimeSearchUtil.h"
+//#import "RealtimeSearchUtil.h"
 //#import "RedPacketChatViewController.h"
 #import "ChatDemoHelper.h"
 
@@ -354,15 +354,15 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     __weak typeof(self) weakSelf = self;
-    [[RealtimeSearchUtil currentUtil] realtimeSearchWithSource:self.dataArray searchText:(NSString *)searchText collationStringSelector:@selector(title) resultBlock:^(NSArray *results) {
-        if (results) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.searchController.resultsSource removeAllObjects];
-                [weakSelf.searchController.resultsSource addObjectsFromArray:results];
-                [weakSelf.searchController.searchResultsTableView reloadData];
-            });
-        }
-    }];
+//    [[RealtimeSearchUtil currentUtil] realtimeSearchWithSource:self.dataArray searchText:(NSString *)searchText collationStringSelector:@selector(title) resultBlock:^(NSArray *results) {
+//        if (results) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [weakSelf.searchController.resultsSource removeAllObjects];
+//                [weakSelf.searchController.resultsSource addObjectsFromArray:results];
+//                [weakSelf.searchController.searchResultsTableView reloadData];
+//            });
+//        }
+//    }];
 }
 
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar
@@ -378,7 +378,7 @@
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
     searchBar.text = @"";
-    [[RealtimeSearchUtil currentUtil] realtimeSearchStop];
+//    [[RealtimeSearchUtil currentUtil] realtimeSearchStop];
     [searchBar resignFirstResponder];
     [searchBar setShowsCancelButton:NO animated:YES];
 }
